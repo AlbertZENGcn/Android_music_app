@@ -1,0 +1,12 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+
+        <item name="colorPrimaryDark">@color/mainColor</item> <!-- Customize your color here. -->
+        <item name="android:statusBarColor">@color/mainColor</item> <!-- cover the original,need above android 5.0, Customize your color here.2 -->
+        <item name="android:windowAnimationStyle">@style/AnimationActivity</item>
+    </style>
+
+</resources>

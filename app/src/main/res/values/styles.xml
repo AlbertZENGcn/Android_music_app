@@ -1,0 +1,52 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+
+        <item name="colorPrimaryDark">@color/mainColor</item> <!-- Customize your color here. -->
+        <!--<item name="android:statusBarColor">@android:color/holo_green_dark </item>-->
+         <!-- cover the original,need above android 5.0, Customize your color here.2 -->
+        <item name="android:windowAnimationStyle">@style/AnimationActivity</item>
+    </style>
+
+    <style name="AnimationActivity" parent="@android:style/Animation.Activity">
+
+        <!-- 打开Activity时，新进入的activity执行的动画 -->
+        <item name="android:activityOpenEnterAnimation">@anim/open_enter</item>
+        <!-- 打开Activity时，原Activity执行动画 -->
+        <item name="android:activityOpenExitAnimation">@anim/open_exit</item>
+        <!-- 退出Activity时， 退出的Activity执行动画 -->
+        <item name="android:activityCloseExitAnimation">@anim/close_exit</item>
+        <!-- 退出Activity时， 重新显示的Activity执行动画 -->
+        <item name="android:activityCloseEnterAnimation">@anim/close_enter</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+    <!--分割线-->
+    <style name="line">
+        <item name="android:layout_height">1dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">@color/lineColor</item>
+        <item name="android:layout_margin">@dimen/marginSize</item>
+    </style>
+    <!--登录按钮-->
+    <style name="commitBtn">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/btnHeight</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">@dimen/titleSize</item>
+        <item name="android:layout_marginLeft">@dimen/marginSize</item>
+        <item name="android:layout_marginRight">@dimen/marginSize</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/btn_commit_select</item><!--点击高亮-->
+    </style>
+
+</resources>
